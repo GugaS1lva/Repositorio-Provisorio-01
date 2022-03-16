@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.O.M.</title>
+    <style>
+        section{
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            align-items: center;
+        }
+        img{
+            max-width: 200px;
+        }
+
+        .painel-botoes-de-links{
+            display: inline-block;
+            background-color: crimson;
+            border: 1px solid black;
+            border-radius: 7px;
+            padding: 10px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+        button{
+            background-color: crimson;
+            color: white;
+            border-radius: 30px;
+            border: none;
+        }
+        button a{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <ul>
+                <li>window</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>location</li>
+                <li>document</li>
+                <li>history</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>html</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>head</li>
+                <li>body</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>meta</li>
+                <li>title</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>h1</li>
+                <li>p</li>
+                <li>p</li>
+                <li>div</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>strong</li>
+            </ul>
+        </div>
+    </section>
+
+    <img src="src/Screenshot_17.png" alt="">
+    <br>
+    <p>OBS: Elemento é qualquer coisa que apareceu na Árvre DOM.</p>
+    <br>
+    
+    <script>
+        // write('') - MOSTRA ALGO NA TELA
+        window.document.write('Olá, Mundo!')
+        window.document.write(' -----|----- ')
+
+        // Buscando algumas config da página. 
+            // Ex: Set de Caracteres
+            window.document.write(window.document.charset)
+            window.document.write(' -----|----- ')
+
+            // Ex: Nome do navegador/appCodeName/appVersion
+            window.document.write(window.navigator.appName)
+            window.document.write(' -----|----- ')
+
+            // Ex: Mostrar URL
+            window.document.write(window.document.URL)
+            window.document.write(' -----|----- ')
+    </script>
+    <br>
+    <br>
+    <br>
+    <div class="painel-botoes-de-links">
+        <button>
+            <a href="ex005-02.html" target="_blank">PÁGINA - 02</a>
+        </button>
+    </div>
+    <div class="painel-botoes-de-links">
+        <button>
+            <a href="ex005-03.html" target="_blank">PÁGINA - 03</a>
+        </button>
+    </div>
+</body>
+</html>
